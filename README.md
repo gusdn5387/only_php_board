@@ -1,2 +1,2 @@
 # only_php_board
-php mvc 
+PHP MVC 게시판
