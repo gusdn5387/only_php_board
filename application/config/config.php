@@ -52,6 +52,7 @@
 			case 'application': $dir = _APP; break;
 			default: $dir = _CTR; break;
         }
-        require_once("{$dir}{$className}.php");
+        $dire = str_replace('\\','/',$dir); 
+        require_once("{$dire}{$className}.php");
     }
 ?>

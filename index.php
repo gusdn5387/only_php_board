@@ -9,7 +9,7 @@
     define("_CONFIG", _APP."config/");
     define("_DATA", _APP."data/");
  
-    define("_URL", "http://{$_SERVER['HTTP_HOST']}/");
+    define("_URL", "http://{$_SERVER['HTTP_HOST']}/only_php_board/");
  
     require_once(_CONFIG."config.php");
     new Application();
