@@ -1,4 +1,4 @@
-<?php
+    <?php
     Class boardController extends Controller {
         function write() {
             loginChk();

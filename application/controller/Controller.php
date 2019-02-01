@@ -1,4 +1,5 @@
 <?php
+    use application\Application;
     Class Controller {
         function __construct() {
             $this->param = Application::getParam();

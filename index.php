@@ -1,5 +1,5 @@
 <?php
-    
+    use application\Application;
     define("_ROOT", __DIR__."/");
     define("_PUBLIC", _ROOT."public/");
     define("_APP", _ROOT."application/");
