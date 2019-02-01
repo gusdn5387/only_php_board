@@ -44,16 +44,14 @@
         } return $size;
     }
 
-    function __autoload($className){//$className == new (클래스 이름)
-		$className = strtolower($className);//클래스 이름 소문자로
-		$className2 = preg_replace("/(model|application)(.*)/", "$1", $className);
-		switch ($className2) {
-			case 'model': $dir = _MODEL; break;
+    function __autoload($className) {
+        $className = strtolower($className);
+        $className2 = preg_replace("/(model!application)(.*)/","$1",$className);
+        switch($className2) {
+            case 'model': $dir = _MODEL; break;
 			case 'application': $dir = _APP; break;
 			default: $dir = _CTR; break;
-		}
-		$dire = str_replace('\\','/',$dir); 
-        $classNamee = str_replace("application\\",'/',$className);
-        require_once("{$dire}{$classNamee}.php");
-	}
+        }
+        require_once("{$dir}{$className}.php");
+    }
 ?>

@@ -1,5 +1,4 @@
 <?php
-namespace application;
     Class Application {
         function __construct() {
             $ctr = $this->getParam()->type."Controller";
